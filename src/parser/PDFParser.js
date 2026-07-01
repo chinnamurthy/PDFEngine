@@ -274,4 +274,10 @@ export class PDFParser {
 
         return dict;
     }
+	
+	tokenizeStream(raw) {
+    return this.lexer.tokenizer._tokenizeStream
+        ? this.lexer.tokenizer._tokenizeStream(raw)
+        : this._fallbackTokenize(raw);
+}
 }
