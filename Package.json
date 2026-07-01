@@ -1,0 +1,20 @@
+{
+  "name": "pdfengine",
+  "version": "1.0.0",
+  "description": "A JavaScript PDF rendering engine inspired by PDF.js",
+  "type": "module",
+  "main": "src/PDFDocument.js",
+  "scripts": {
+    "start": "npx http-server .",
+    "test": "echo \"No tests specified\""
+  },
+  "keywords": [
+    "pdf",
+    "pdfjs",
+    "renderer",
+    "parser",
+    "javascript"
+  ],
+  "author": "Chinnamurthy",
+  "license": "MIT"
+}

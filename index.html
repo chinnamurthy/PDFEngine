@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>PDF Viewer</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+#toolbar {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#viewer {
+    padding: 10px;
+}
+
+.pageContainer {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.pdfCanvas {
+    border: 1px solid #ccc;
+    display: block;
+}
+
+.formLayer {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="toolbar">
+
+     <span> Select PDF: </span>
+            <select id="pdfFile" style="width:130px;" class="dropdown" >
+               <option value="">---Select---</option>
+               <option value="http://localhost/PDFSigning_POC_Demos/Health.pdf">Health</option>
+               <option value="http://localhost/PDFSigning_POC_Demos/Insurance.pdf">Insurance</option>
+               <option value="http://localhost/PDFSigning_POC_Demos/pDocSigner_QuickGuide.pdf">pDoc Signer Quick Guide</option>
+            </select>
+
+    <button id="loadPdfBtn">
+        Load PDF
+    </button>
+
+</div>
+
+<div id="viewer"></div>
+
+<script type="module" src="app.js"></script>
+
+</body>
+
+</html>
